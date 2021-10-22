@@ -1,0 +1,27 @@
+/*=============== & ===============*/
+
+.category {
+  &__container {
+    grid-template-columns: auto auto;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (min-width: 900px) {
+      & {
+        grid-template-columns: repeat(3, auto);
+      }
+    }
+  }
+  &__content {
+    text-align: center;
+    line-height: 1.8;
+  }
+  &__img {
+    width: 200px;
+  }
+
+  &__data:hover .category__img {
+    transform: translateY(-0.5rem);
+    transition: all 0.8s;
+  }
+}

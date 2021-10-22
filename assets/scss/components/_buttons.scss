@@ -1,0 +1,33 @@
+.btn {
+  & {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--title-color);
+    padding: 1rem 1.75rem;
+    border-radius: 0.5rem;
+    font-weight: var(--font-medium);
+    transition: 0.3s;
+    outline: none;
+    border: none;
+    // transition: all 0.2s;
+  }
+  &-ghost {
+    background: transparent;
+    border: 2px solid var(--text-color);
+    border-radius: 40px;
+    text-transform: capitalize;
+    padding: 0.5rem 0.8rem;
+  }
+  &--link {
+    color: var(--title-color);
+    text-transform: capitalize;
+  }
+  &--flex {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: var(--normal-font-size);
+  }
+}
+
+

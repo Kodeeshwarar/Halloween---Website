@@ -1,0 +1,68 @@
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+  padding: 4.5rem 0 2rem;
+
+  &__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-2);
+    text-align: center;
+
+    @media screen and (min-width: 992px) {
+      font-size: var(--h1-font-size);
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+/*=============== LAYOUT ===============*/
+.bd-container {
+  max-width: 90%;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+.bd-grid {
+  display: grid;
+}
+
+.main {
+  overflow: hidden; // For animation
+}
+
+.home__description,
+.about__description {
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+  .about__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*=============== REUSABLE CSS CLASSES ===============*/
+.u-margin-bottom-medium {
+  margin-bottom: 6rem !important;
+}
+
+@media screen and (min-width: 767px) {
+  .about__title,
+  .about__data {
+    text-align: initial !important;
+  }
+}
+
+/*=============== LAYOUT ===============*/
+.bd-container {
+  max-width: 968px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+
+  @media only screen and (min-width: 62.5em) {
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,64 @@
+/*=============== NEW ARRIVALS ===============*/
+
+/* new section */
+.new {
+  &__content {
+    position: relative;
+    background: var(--container-color);
+    width: 242px;
+    padding: 2rem 0 1.5rem 0;
+    border-radius: 0.75rem;
+    text-align: center;
+    overflow: hidden;
+    @media only screen and (min-width: 900px) {
+      & {
+        width: 300px;
+      }
+    }
+  }
+  &__tag {
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+    background: var(--first-color);
+    padding: 0.5rem 0.7rem;
+    border-radius: 10px;
+  }
+  &__img {
+    width: 150px;
+    @media only screen and (min-width: 900px) {
+      & {
+        width: 200px;
+      }
+    }
+  }
+  &__title {
+    margin-top: 1rem;
+  }
+  &__price {
+    color: var(--title-color);
+    font-size: 20px;
+  }
+  &__discount {
+    text-decoration: line-through;
+    font-size: var(--small-font-size);
+  }
+  &__button {
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+    transition: all 0.2s;
+    padding: 1rem;
+  }
+  &__content:hover &__button {
+    right: 0;
+  }
+  &:hover .new__img {
+    transform: translateY(-0.5rem);
+    transition: all 0.8s;
+  }
+
+  &__icon {
+    font-size: 1rem;
+  }
+}
